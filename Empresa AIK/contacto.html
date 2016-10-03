@@ -1,60 +1,107 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Contacto</title>
-		<meta charset="utf-8"/>
-	</head>
-	<body>
-		<nav>
-			<a href="index.html">Inicio</a> | <a href="tecnologia.html">Tecnologia</a> | <a href="servicios.html">Servicios</a> | <a href="contacto.html">Contacto</a>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Titulo</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="vista.css">
+</head>
+<body>
+	<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-6 col-md-offset-3">
+		<div class="container-fluid">
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<section class="presentacion">
+				<h2>Contacto</h2>
+					<p>Visítanos en nuestra sede en la carrera 25 A # 2-69 <br/>
+					Teléfonos: 8443355 – 8223456<br/> 
+					Línea de atención nacional 01-8000-1234-567<br/>
+					Email: aikautos@aik.com<br/>
+					</p>
+				</section>
+			</div>
+		<nav class="menu">
+
+			<a href="tecnilogia.html">Tecnologia</a>
+			<a href="index.html">Inicio</a>
+			<a href="servicios.html">Servicios</a>
 		</nav>
-		<section>
-			<h2>Contactenos</h2>
 
-			<form>
-				First Name:<br>
-				<input type="text" name="firsname" id="fistname" required><br>
-				Last Name:<br>
-				<input type="text" name="lastname" id="fistname" required><br>		
-				Fecha de Nacimiento:<br>
-				<input type="date" name="datebirth"><br>
-				Correo electronico:<br>
-				<input type="email" name="correo" required><br>	
-				Género:<br>		
+		<div class="container-fluid">
+			<form action="#" method="POST">
+				
+				<label>First Name:</label> <br>
+				<input type="text" class="form-control" name="firsname"  placeholder="Escriba su nombre" required ><br><br>
+				<label>Last Name:</label><br>
+				<input type="text" class="form-control" name="lastname"  placeholder="Escriba su apellido" required><br><br>	
+				<label> Fecha de Nacimiento:</label><br>
+				<input type="date" class="form-control" name="datebirth"><br><br>
+				<label>Correo electronico:</label><br>
+				<input type="email" class="form-control" name="correo" placeholder="Escriba su correo" required><br><br>
+				<label> Género:</label><br>		
 				<input type="radio" name="genero" value="M">Masculino<br>
-				<input type="radio" name="genero" value="F">Femenino<br>					
-				Edad:<br>				
-				<input type="number" name="edad" required><br>	
+				<input type="radio" name="genero" value="F">Femenino<br><br>
 
-				<input type="checkbox" name="Cedula">Cédula<br>
-				<input type="checkbox" name="Cedula">TI<br>		
-				Contraseña:<br>
-				<input type="password" name="myPass" required><br>
-				<input type="submit" name="enviar" value="Registrar" class="clase1"><br>	
-				<input type="reset" name="enviar" value="Restablecer"><br>		
+				<label>Tema de Interes</label>
+				<div class="checkbox">
+					<label><input type="checkbox">Musica</label>
+
+				</div>
+
+				<div class="checkbox">
+					<label><input type="checkbox">Videos</label>
+					
+				</div>
+				<div class="checkbox">
+					<label><input type="checkbox">Autos</label>
+					
+				</div>
+
+				<div class="checkbox">
+					<label><input type="checkbox">Revistas</label>
+					
+				</div>
+
+				<div class="checkbox">
+					<label><input type="checkbox">Otros</label>
+					
+				</div>
 
 
-			
+
+
+				<label>Fecha de nacimiento:</label><br>				
+				<input type="text" class="form-control" name="fecha de nacimientos" required><br><br>
+
+
+				
+				<label>Descripcion:</label><br>
+				<textarea name="descripcion" class="form-control" maxlength="255">
+				</textarea><br> 
+				<label> Telefono:</label><br>
+
+				<input type="text" class="form-control" name="telefono"><br>	
+				<input type="submit" name="enviar" class="btn btn-primary" value="Registrar">	
+				<input type="reset" name="enviar" class="btn btn-danger" value="Borrar"><br><br>	
+
 			</form>
-
-			<p>Visítanos en nuestra sede en la carrera 25 A # 2-69 <br/>
-				Teléfonos: 8443355 – 8223456<br/> 
-				Línea de atención nacional 01-8000-1234-567<br/>
-				Email: aikautos@aik.com<br/>
-			</p>
-
-			<h3>Cuenta con nosotros incondicionalmente</h3>			
-			<p>Visita nuestros talleres autorizados en todo el territorio nacional y encontrarás todos los servicios de mantenimiento y reparación que tu vehículo necesita, realizados por personal altamente calificado, utilizando tecnología de punta y herramientas especializadas para diagnosticar y reparar correctamente tu AIK.
-			Experimenta nuestro completo servicio al cliente AIK, que evoluciona continuamente para mantenerse a la altura de tus expectativas.
-			</p>
-		</section>
-		<inside>
-			Estudia Ingeniería de Sistemas www.fup.edu.co  <br/>
-		</inside>		
+		</div>
+		
 		<fooder>
-			Autos AIK – Todos los derechos reservados – 2016 <br/>
+		<div class="Piedepagina">
+			<p>Autos AIK – Todos los derechos reservados – 2016</p><br/>
 			<a href="mailto: contacto@aik.com"> Escribanos</a> <br/>
 			Popayán - Colombia <br/>
+			</div>
 		</fooder>
-	</body>
+		
+       </div>
+    </div>
+	</div>
+	</div>
+	</div>
+</body>
 </html>
